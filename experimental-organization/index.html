@@ -106,30 +106,79 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#experimental-organization">Experimental Organization</a></li>
+        <li class="main active"><a href="#scientific-frames">Scientific frames</a></li>
         
-            <li><a href="#scientific-frames">Scientific frames</a></li>
+    
+        <li class="main "><a href="#projects">Projects</a></li>
         
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#what-are-projects">What are projects ?</a></li>
         
-            <li><a href="#experiments">Experiments</a></li>
+            <li><a href="#what-are-project-properties">What are project properties ?</a></li>
         
-            <li><a href="#documents">Documents</a></li>
+            <li><a href="#create-a-project">Create a project</a></li>
         
-            <li><a href="#agronomical-objects">Agronomical Objects</a></li>
+    
+        <li class="main "><a href="#experiments">Experiments</a></li>
         
-            <li><a href="#variables">Variables</a></li>
+            <li><a href="#what-are-experiments">What are experiments ?</a></li>
         
-            <li><a href="#dataset">Dataset</a></li>
+            <li><a href="#what-are-experiment-properties">What are experiment properties ?</a></li>
         
-            <li><a href="#annotations">Annotations</a></li>
+            <li><a href="#create-an-experiment">Create an experiment</a></li>
+        
+            <li><a href="#linking-sensors-and-variables-to-an-experiments">Linking sensors and variables to an experiments</a></li>
+        
+            <li><a href="#map-visualization">Map visualization</a></li>
+        
+            <li><a href="#images">Images</a></li>
+        
+    
+        <li class="main "><a href="#documents">Documents</a></li>
+        
+            <li><a href="#what-are-phis-documents">What are Phis documents ?</a></li>
+        
+            <li><a href="#upload-a-document">Upload a document</a></li>
+        
+    
+        <li class="main "><a href="#scientific-objects">Scientific Objects</a></li>
+        
+            <li><a href="#object-types">Object types</a></li>
+        
+            <li><a href="#importing-plots">Importing plots</a></li>
+        
+            <li><a href="#visualize-scientific-objects">Visualize scientific objects</a></li>
+        
+    
+        <li class="main "><a href="#variables">Variables</a></li>
+        
+            <li><a href="#variables-properties">Variables properties</a></li>
+        
+            <li><a href="#create-variables-traits-methods-and-units">Create variables, traits, methods and units</a></li>
+        
+            <li><a href="#modifiy-existing-variables">Modifiy existing variables</a></li>
+        
+    
+        <li class="main "><a href="#dataset">Dataset</a></li>
+        
+            <li><a href="#dataset-properties">Dataset properties</a></li>
+        
+            <li><a href="#import-dataset">Import Dataset</a></li>
+        
+            <li><a href="#visualize-dataset">Visualize Dataset</a></li>
+        
+    
+        <li class="main "><a href="#annotations">Annotations</a></li>
+        
+            <li><a href="#what-are-annotations">What are annotations ?</a></li>
+        
+            <li><a href="#add-annotation">Add annotation</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="experimental-organization">Experimental Organization</h1>
+<p>scientific object# Experimental Organization</p>
 <h2 id="scientific-frames">Scientific frames</h2>
 <p>Scientific experiments generate data, which is the focus the present information system.
 However, if only the data produced by experiments is stored, and not the complete experimental conditions, i.e. the environmental conditions, infrastructure and supporting equipment or resources used to conduct those experiments, then such archived data would be orphan and therefore non reusable.</p>
@@ -209,7 +258,7 @@ The email adresses refer uniquely to persons existing on Phis.</p>
 <h3 id="what-are-experiments">What are experiments ?</h3>
 <p>Field plant phenotyping experimentations are refered to in Phis as <strong>Experiments</strong>.
 Experiments in Phis form self-sustained organizational units occuring in a delimited and known time frame.
-Every agronomical objects and environmental data stored in Phis field have to be related to an experiment.
+Every scientific objects and environmental data stored in Phis field have to be related to an experiment.
 Experiments include both raw and cleaned data.
 The data types found in Phis experiments are including but not limited to :</p>
 <ul>
@@ -236,7 +285,7 @@ Every experiment on this list is characterized by :</p>
 For more detail on experimental data access restrictions, see the section <a href="../../community/#restrictions-to-a-group">Restrictions to a group</a>.</p>
 <p><img alt="experiment-view" src="../img/experiments_view.png" /></p>
 <p>On top of the experiment information sheet, several buttons are displayed.
-The buttons <span class="btn btn-info">Map Visualization</span> and <span class="btn btn-success">Generate Map</span> enable the visualization of the agronomical objects (e.g. plots) of the experiment on a map centered on the experiment intallation location.
+The buttons <span class="btn btn-info">Map Visualization</span> and <span class="btn btn-success">Generate Map</span> enable the visualization of the scientific objects (e.g. plots) of the experiment on a map centered on the experiment intallation location.
 Jump to the section <a href="../../phis-docs-community/experimental-organization/#map-visualization">Map Visualization</a> for more information on experiment maps.
 The use of the other buttons, <span class="btn btn-primary">Update</span> and <span class="btn btn-warning">Add document</span>, is described at the end of the next section entitled <a href="../../phis-docs-community/experimental-organization/#create-an-experiment">Create an experiment</a>.
 The <span class="btn btn-default">Add annotation</span> button can be used by any user in order to annotate the selected experiment using the <a href="https://www.w3.org/TR/annotation-model/">Web Annotation Data Model</a> (oa).
@@ -291,24 +340,36 @@ Please go to <a href="../../phis-docs-community/community/#access-rights">Access
 <p>The <span class="btn btn-warning">Add document</span> button at the top of the experiment information sheet remains orange until a first document has been added, e.g. an experimental design.
 See the <a href="../../phis-docs-community/experimental-organization/#documents">Documents</a> section below for further information on documents.</p>
 <p>Once created, the experiment specifics can be modified with the <span class="btn btn-primary">Update</span> button.</p>
+<h3 id="linking-sensors-and-variables-to-an-experiments">Linking sensors and variables to an experiments</h3>
+<p>Admin users can associate experiments to variables and sensors, but only if they have already been declared in the system through to the <a href="../../phis-docs-community/experimental-organization/#variables">Variables</a> menu and the <a href="../(../phis-docs-community/installation/#sensors)">Sensors</a> menu respectively.</p>
+<p>An experiment can be linked to several variables and sensors previously declared in Phis.</p>
+<p>From the <code>Experiments</code> menu (accessible from the <strong>experimental organization</strong> menu in the top navigation bar), select an experiment from the experiments list clicking on the eye icon on its right to access its information sheet.
+Then, go to the <strong>Measured Variables</strong> field and add variables from the dropdown list displaying all the alias of the variables previously declared in Phis.
+You can also go to the <strong>Sensors which participates in</strong> field and add sensors from the dropdown list displaying all the alias of the sensors previously declared in Phis.</p>
+<p>After having selected one or several variables or sensors, click on the <em>Update measured variable</em> button (check symbol) on the right to save the changes you made to the experiment.
+You should get a green "Resources updated" pop-up on the top right corner of your screen after having clicked on the <em>Update measured variable</em> button.</p>
+<p><img alt="experiments_link-to-variables-and-sensors" src="../img/experiments_linked-variables-and-sensors.png" /></p>
+<p>The experiment-variable and experiment-sensor links are now saved in the triplestore and displayed respectively in the <strong>Measured Variables</strong> and <strong>Sensors which participates in</strong> fields of the experiment information sheet.
+To remove these links, just click on the close window symbol ("x") next to the variable or sensor alias in their respective fields, and then click on the associated <em>Update measured variable</em> button.
+You should get another green "Resources updated" pop-up on the top right corner of your screen after having clicked on the <em>Update measured variable</em> button, which confirms the changes made.</p>
 <h3 id="map-visualization">Map visualization</h3>
 <h4 id="objects-selection">Objects selection</h4>
-<p>Agronomical objects associated with a given experiment, for example plots, can be displayed on a map, thanks to their geopositioning informations.
-In Phis, a map refers to a dynamic map where all the agronomical objects of a given experiment are represented.</p>
-<p>After having imported agronomical objects linked to an experiment, the map associated with this experiment is created within the <code>Experiments</code> menu through the <span class="btn btn-success">Generate Map</span> button.</p>
-<p>Once the map of an experiment has been created, there's no need to re-create it if no new agronomical object has been linked to this experiment.
-In such cases, the access to the experiment map is realized within the <code>Experiments</code> menu through the <span class="btn btn-info">Map Visualization</span> button.</p>
+<p>Scientific objects associated with a given experiment, for example plots, can be displayed on a map, thanks to their geopositioning informations.
+In Phis, a map refers to a dynamic map where all the scientific objects of a given experiment are represented.</p>
+<p>After having imported scientific objects linked to an experiment, a map associated with this experiment can be visualized within the <code>Experiments</code> menu through the <span class="btn btn-info">Map Visualization</span> button.</p>
+<p>From this <code>Map Visualization</code> menu, one can create and subsequently update its information (if new scientific objects have been linked to the experiment) through the <span class="btn btn-success">Generate Map</span> button on the top right corner of the web page.
+Once the map of an experiment has been created, there's no need to re-create it if no new scientific object (e.g. plot) has been linked to this experiment.</p>
 <p>The map of an experiment is dynamic: one can zoom in and out with the <strong>+</strong> and <strong>-</strong> sign at the top left corner of the map, or simply using the mouse wheel.
 The map visualization also works with a touchscreen.
 Map rotation is performed pressing <code>Alt + Shift</code> while draging the mouse pointer.
-Selecting multiple contiguous agronomical objects is performed pressing <code>Ctrl + Left Click</code> and then dragging the mouse pointer (still holding the mouse left click).
-Selecting multiple non-contiguous agronomical objects is performed pressing <code>Ctrl + Shift</code> and then using the left-click of the mouse pointer.</p>
+Selecting multiple contiguous scientific objects is performed pressing <code>Ctrl + Left Click</code> and then dragging the mouse pointer (still holding the mouse left click).
+Selecting multiple non-contiguous scientific objects is performed pressing <code>Ctrl + Shift</code> and then using the left-click of the mouse pointer.</p>
 <p><img alt="map-visualization-ctrl" src="../img/map-visualization_ctrl.png" /></p>
-<p>When agronomical objects of a map are selected, their attributes (alias within the experiment, crop specied, variety, modality, repetition) are displayed in a table under the map.</p>
+<p>When scientific objects of a map are selected, their attributes (alias within the experiment, crop specied, variety, modality, repetition) are displayed in a table under the map.</p>
 <p><img alt="map-visualization-selected" src="../img/map-visualization_selected.png" /></p>
 <h4 id="graphics-from-datasets">Graphics from datasets</h4>
 <p>Another feature provided by the <code>Map Visualization</code> menu is the possibility to plot graphics from datasets associated to an experiment.
-A first step is to select on the map agronomical objects (e.g. plots) as explained <a href="../../phis-docs-community/experimental-organization/#objects-selection">above</a>.
+A first step is to select on the map scientific objects (e.g. plots) as explained <a href="../../phis-docs-community/experimental-organization/#objects-selection">above</a>.
 In order to order to create clear graphics,one should avoid selecting too many objects at the same time.
 At that point, a new section, <strong>Dataset(s) Visualization (On selected plot(s))</strong>, appears under the map where the objects have been selected.
 The second step is to select the variable of the dataset from which a graphic should be produced.
@@ -323,19 +384,19 @@ Variable values associated to a previous date will not appear in the graphic.</p
 Variable values associated to a later date will not appear in the graphic.</p>
 <p>The last step is to press the <span class="btn btn-primary">Search</span> button, which will lead to the creation of a graphic displaying according to a time axis the variable values associated to :</p>
 <ul>
-<li>the agronomical objects selected on the map</li>
+<li>the scientific objects selected on the map</li>
 <li>the variable selected in the <strong>Quantitative Variable</strong> field</li>
 <li>potentially the time window between <strong>Date Start</strong> and <strong>Date End</strong> if those fields have been filled out</li>
 </ul>
 <p>On the new graphic, the time is displayed on the abscissa axis and the variable on the ordinate axis.
-Each points of the same color are associated to the same agronomical object which is identified below the graphic by its URI.
+Each points of the same color are associated to the same scientific object which is identified below the graphic by its URI.
 In future Phis developments, objects alias instead of URIs will be used as curve labels.
-Variable values and curve associated to an agronomical object can be masked by clicking on its associated curve label which at this point changes from black to grey.
+Variable values and curve associated to an scientific object can be masked by clicking on its associated curve label which at this point changes from black to grey.
 Clicking a second time on the label as the effect to show again the previously hidden curve.</p>
 <h3 id="images">Images</h3>
 <p>Another feature provided by the <code>Map Visualization</code> menu is the possibility to show images associated to an experiment, such as hemispherical images shot on the field.</p>
-<p>A first step is to select on the map the agronomical object (e.g. plot), as explained <a href="../../phis-docs-community/experimental-organization/#objects-selection">above</a>, associated with the images you want to visualize.
-Do not select two agronomical objects (or more), otherwise PHIS would look for images associated to both the selected object, while most images are associated to one and only one object.
+<p>A first step is to select on the map the scientific object (e.g. plot), as explained <a href="../../phis-docs-community/experimental-organization/#objects-selection">above</a>, associated with the images you want to visualize.
+Do not select two scientific objects (or more), otherwise PHIS would look for images associated to both the selected object, while most images are associated to one and only one object.
 At that point, a new section, <strong>Images Visualization (On selected plot)</strong>, appears under the map where the objects have been selected.</p>
 <p><img alt="images-visualization" src="../img/images-visualization.png" /></p>
 <p>The second step is to select the type of image you want to display, selecting it from the list of images type, and then press the <span class="btn btn-primary btn-file">Show Images</span> button.</p>
@@ -406,10 +467,10 @@ From there, the document cannot be modified or deleted (in Phis current version)
 However, the document metadata can be modified with the <span class="btn btn-primary">Update</span> button on top of the information sheet.
 The document can also be downloaded clicking on the <img alt="view" src="../img/view_64_32.png" /> icon above the <strong>View / Download</strong> text, below the information sheet.</p>
 <p><img alt="update-document" src="../img/document-update.png" /></p>
-<h2 id="agronomical-objects">Agronomical Objects</h2>
+<h2 id="scientific-objects">Scientific Objects</h2>
 <h3 id="object-types">Object types</h3>
 <p>Plant phenotyping experiments all revolve around one entity of interest : plants !
-Phis experiments are focused on a given type of elements : <strong>agronomical objects</strong>, which are no more than declinations of plants, at various scales :</p>
+Phis experiments are focused on a given type of elements : <strong>scientific objects</strong> (also refered to as agronomical objects), which are no more than declinations of plants, at various scales :</p>
 <ul>
 <li><strong>plant organ</strong> : part of a given plant</li>
 <li><strong>plant</strong> : single individual, displaying a single genotype, which is refered to as a <strong>variety</strong></li>
@@ -417,25 +478,25 @@ Phis experiments are focused on a given type of elements : <strong>agronomical o
 <li><strong>block</strong> : combination of plots, generally forming an environmentally homogeneous entity</li>
 <li><strong>field</strong> : large spatial unit that includes plots and potentially blocks</li>
 </ul>
-<p>These agronomical objects, forming the basic units of experimentations, are observed through time, and consequently constitute the origin of phenotypic data.
-A given agronomical object is required to be associated with one experiment, and one only.
-Phenotypic data created in an experiment, whether is it directly measured, calculated or estimated, is necessarily linked to agronomical objects.</p>
-<p>Every agronomical object is uniquely identified through a standardized URI.
+<p>These scientific objects, forming the basic units of experimentations, are observed through time, and consequently constitute the origin of phenotypic data.
+A given scientific object is required to be associated with one experiment, and one only.
+Phenotypic data created in an experiment, whether is it directly measured, calculated or estimated, is necessarily linked to scientific objects.</p>
+<p>Every scientific object is uniquely identified through a standardized URI.
 Metadata is associate to objects under the form of attributes : alias, experiment modality, etc.
 The data associated with these objects correspond with the values of phenotypic variables associated</p>
-<p>The complete list of agronomical objects is available in the <code>Agronomical Objects</code> menu, accessible from Phis top navigation bar.
-A Phis user with a restricted access (e.g. <em>guestphis</em>) is likely to be unable to see the <code>Agronomical Objects</code> menu, since there are no objects for her/him to see.
-The agronomical objects list is preceded by a research bar enabling the user to filter objects by their URI, Alias, type, and the experience they are linked to.
+<p>The complete list of scientific objects is available in the <code>Scientific Objects</code> menu, accessible from Phis top navigation bar.
+A Phis user with a restricted access (e.g. <em>guestphis</em>) is likely to be unable to see the <code>Scientific Objects</code> menu, since there are no objects for her/him to see.
+The scientific objects list is preceded by a research bar enabling the user to filter objects by their URI, Alias, type, and the experience they are linked to.
 The list of objects associated with a search result, and their metadata, can be retrieved as a .csv file with the <span class="btn btn-primary">Download Search Result</span> button.</p>
 <p><img alt="objects-list" src="../img/agronomical-objects_list.png" /></p>
-<p>Agronomical objects information can also be accessed through the <code>Experiments</code> menu.
-After having selected an experiment, the agronomical objects linked to it can be displayed on a map.
+<p>Scientific objects information can also be accessed through the <code>Experiments</code> menu.
+After having selected an experiment, the scientific objects linked to it can be displayed on a map.
 Moreover, selecting objects on such a map provides additional information on the attributes of these objects.
 See the <a href="../../phis-docs-community/experimental-organization/#map-visualization">Map Visualization</a> section for more information on that matter.</p>
 <h3 id="importing-plots">Importing plots</h3>
-<p>Within the <code>Agronomical objects</code> menu, Phis users can import new plots with the
+<p>Within the <code>Scientific Objects</code> menu, Phis users can import new plots with the
 <span class="btn btn-success">Create</span> button.</p>
-<p>Plot, which are agronomical objects, are imported into Phis through a .csv file containing on its first line the following header :</p>
+<p>Plot, which are scientific objects, are imported into Phis through a .csv file containing on its first line the following header :</p>
 <pre><code>Alias;Geometry;ExperimentURI;Species;Variety;ExperimentModalities;Repetition
 </code></pre>
 
@@ -534,21 +595,21 @@ More information on this system <a href="https://confluence.qps.nl/qinsy/en/worl
 </tr>
 </tbody>
 </table>
-<p>THe second step is to import the .csv file through the <span class="btn btn-primary">Browse</span> button, at the bottom right of the <code>Home / Agronomical Objects / Create Agronomical Object</code> menu.</p>
+<p>THe second step is to import the .csv file through the <span class="btn btn-primary">Browse</span> button, at the bottom right of the <code>Home / Scientific Objects / Create Scientific Object</code> menu.</p>
 <p><img alt="new-objects-browse" src="../img/create-object_browse.png" /></p>
 <p>Use the file browser to select the desired .csv file and open it.</p>
 <p><img alt="new-objects-find-file" src="../img/create-object_find-file.png" /></p>
 <p>Check the imported file but do not press the Upload button.
 Only on file at a time can be imported.</p>
 <p><img alt="new-objects-create" src="../img/create-object_click-create.png" /></p>
-<p>After having pressed the <span class="btn btn-success">Create</span> bottom button the number of imported agronomical objects is displayed.</p>
+<p>After having pressed the <span class="btn btn-success">Create</span> bottom button the number of imported scientific objects is displayed.</p>
 <p><img alt="new-objects-success" src="../img/create-object_result.png" /></p>
-<h3 id="visualize-agronomical-objects">Visualize agronomical objects</h3>
+<h3 id="visualize-scientific-objects">Visualize scientific objects</h3>
 <p>See <a href="../../phis-docs-community/experimental-organization/#map-visualization">Map Visualization</a> section.</p>
 <h2 id="variables">Variables</h2>
 <h3 id="variables-properties">Variables properties</h3>
-<p>Phis variables characterize Phis <strong>agronomical objects</strong> or their <strong>environment</strong>.
-Variables characterizing agronomical objects are <strong>phenotypic variables</strong>, while variables characterizing the environment in which those agronomical objects are studied are refered to as <strong>environmental variables</strong>.
+<p>Phis variables characterize Phis <strong>scientific objects</strong> or their <strong>environment</strong>.
+Variables characterizing scientific objects are <strong>phenotypic variables</strong>, while variables characterizing the environment in which those scientific objects are studied are refered to as <strong>environmental variables</strong>.
 Phis variables can be either directly mesured by a sensor, either computed from one or several variables.</p>
 <p>Every variable produced by an experiment must have been previously created in Phis, and every variable created in Phis has to be defined unambuigusously.
 Consequently, when a user refers to a variable in an experiment, there is no ambiguity about the concept he is refering to.
@@ -654,19 +715,19 @@ High-throughput plant phenotyping platforms commonly set up experiments in which
 Plant growth dynamcis are analyzed through the evolution of various variable (e.g. LAI, NDVI, etc.) through time.</p>
 <p>At this stage of development, all dataset variables are quantitative.
 No qualitative variables are saved in the datasets : a variable from a dataset can only assume numerical values and no character string is allowed.</p>
-<p>A dataset typically displays information on many agronomical objects.
+<p>A dataset typically displays information on many scientific objects.
 These objects can be described by several variables.
 Each one of these variables can assume diverse values at different dates.
 In order to avoid confusion, each element of a dataset should then be understood as a triplet object-time-variable.
 Thus, each element of a dataset is associated uniquely with :</p>
 <ul>
-<li>a single agronomical object (e.g. a plot)</li>
+<li>a single scientific object (e.g. a plot)</li>
 <li>a single date (the day of the data acquisition)</li>
 <li>a single variable (a quantitative variable used to monitor the measured or calculated trait)</li>
 <li>a single variable numerical value (the value of the variable cited above)</li>
 </ul>
 <p>Datasets are available indirectly through the <code>Experiments</code> menu, selecting an experiment and then accessing to its map through the <span class="btn btn-info">Map Visualization</span> button.</p>
-<p>Graphics can be extracted from the experiment datasets in the <strong>Dataset(s) Visualization (On selected plot(s))</strong> section, which appears under the map of the experiment when agronomical objects are selected.
+<p>Graphics can be extracted from the experiment datasets in the <strong>Dataset(s) Visualization (On selected plot(s))</strong> section, which appears under the map of the experiment when scientific objects are selected.
 How to create such graphics is explained in the <a href="../../phis-docs-community/experimental-organization/#map-visualization">Map Visualization</a> section of this documentation.</p>
 <h3 id="import-dataset">Import Dataset</h3>
 <p>Datasets can be added to Phis through the <code>Dataset</code> menu in the top navigation bar.
@@ -708,10 +769,10 @@ Click several times on <span class="btn btn-primary btn-file">Add Document</span
 <p>The dataset added to Phis must respect some file rules :</p>
 <ul>
 <li>the file must be a .csv file</li>
-<li>the first line of the file is a header, every other additional row matches with a new element characterized by a single agronomical object, a single date and as many variable values as there are variables</li>
+<li>the first line of the file is a header, every other additional row matches with a new element characterized by a single scientific object, a single date and as many variable values as there are variables</li>
 <li>in a given row, each items are separated by a single semicolon <code>;</code></li>
 <li>the header contains the fields <strong>AgronomicalObjectURI</strong> and <strong>Date</strong>, and as many variable alias as there are added variables (see the .csv template that can be downloaded above the <strong>Data File</strong> field)</li>
-<li>the agronomical objects are refered to by their respective URI</li>
+<li>the scientific objects are refered to by their respective URI</li>
 <li>the date is refered to in the YYYY-MM-DD (year-month-date) format</li>
 <li>variable values are provided as real number, since Phis then stores numbers as <a href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format">double-precision floating-point value</a></li>
 <li>numerical values decimal separators should be dots <code>.</code> but commas <code>,</code> are tolerated</li>
@@ -728,8 +789,8 @@ URI2;2017-04-15;4.12;9
 URI2;2017-04-31;5.347687869;10
 </code></pre>
 
-<p>The URI of the agronomical objects of a given experimentation can be found on the <code>Agronomical Objects</code> menu, using search filters, and then downloaded with the <span class="btn btn-primary">Download Search Result</span> button (see the <a href="../../phis-docs-community/experimental-organization/#object-types">Object types</a> of this documentation).
-All variables values of the imported dataset are associated with agronomical objects that must have been previously declared in Phis (see <a href="../../phis-docs-community/experimental-organization/#importing-plots">Importing plots</a>).</p>
+<p>The URI of the scientific objects of a given experimentation can be found on the <code>Scientific objects</code> menu, using search filters, and then downloaded with the <span class="btn btn-primary">Download Search Result</span> button (see the <a href="../../phis-docs-community/experimental-organization/#object-types">Object types</a> of this documentation).
+All variables values of the imported dataset are associated with scientific objects that must have been previously declared in Phis (see <a href="../../phis-docs-community/experimental-organization/#importing-plots">Importing plots</a>).</p>
 <p>The data file imported in Phis can displays many fields (i.e. number of items in the header), but only the column matching with the expected fields will be kept.
 The expected fields and their name are provided in the .csv template provide by the <em>Download Template</em> link above the <strong>Data File</strong> field.
 Hence, users can copy and paste their data in the template file (keeping the header unchanged), or import directly their datasheet as a .csv, after having renamed correctly the fields as described in the template.</p>
